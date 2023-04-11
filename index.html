@@ -12,29 +12,21 @@
     <!-- Css Customizado -->
     <link rel="stylesheet" href="./css/pokedex.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <!-- JS -->
-    <script src="./js/index.js" defer></script>
-    <!-- FIM -->
+    <!-- Fim Css Customizado -->
 </head>
 <body>
     <section class="content">
         <h1>Pokédex</h1>
         <ol class="pokemons">
-            <li class="pokemon">
-                <span class="number">#001</span>
-                <span class="name">Bubasauro</span>
-
-                <div class="detail">
-                    <ol class="types">
-                        <li class="type">Grass</li>
-                        <li class="type">Poison</li>
-                    </ol>
-
-                    <img src="./assets/bubasaur.svg" alt="bubasaur">
-                </div>
-                
-            </li>
         </ol>
+        <div class="pagination">
+            <button type="button" id="loadMoreButton">
+                Load More
+            </button>
+        </div>
     </section>
+    <script src="./js/pokemon-model.js"></script>
+    <script src="./js/poke-api.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
